@@ -36,9 +36,9 @@ difference() {
         cylinder(h=tiefeAuge+0.1,r=0.5,$fn=30);
     
     //Augenzahl 1 
-    /*
-    translate([0,2,0]) 
-        rotate([-90,0,0]) 
-            */
+    
+    translate([0,laengeWuerfel/2-tiefeAuge,0]) 
+        rotate([-90,0,0])
+            cylinder(h=tiefeAuge+0.1,r=0.5,$fn=30);
+            
 }
-cylinder(h=tiefeAuge,r=0.5,$fn=30);
