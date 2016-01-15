@@ -4,10 +4,13 @@ Mit # kann man innerhalb von difference, union o.ä.
 das Ursprungsobjekt sichtbar machen.
 
 */
+//Sphere hatte vorher 3 als Radius
 
+translate([0,0,2.15])
 wuerfel();
 
-module wuerfel(laengeWuerfel = 4.3, tiefeAuge = 0.1, radiusAuge = 0.5) {
+module wuerfel(tiefeAuge = 0.1, radiusAuge = 0.5) {
+    laengeWuerfel = 4.3;
     difference() {
         intersection() {
             sphere(3,$fn=50);
